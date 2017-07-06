@@ -15,6 +15,7 @@ public class PrimeFactorsTest {
     primeFactorsTest() {
         assertThat(factorsOf(1), is(intList()));
         assertThat(factorsOf(2), is(intList(2)));
+        assertThat(factorsOf(3), is(intList(3)));
     }
 
     private List<Integer> factorsOf(int n) {
