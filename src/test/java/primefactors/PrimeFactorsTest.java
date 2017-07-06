@@ -2,6 +2,7 @@ package primefactors;
 
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -16,7 +17,7 @@ public class PrimeFactorsTest {
     }
 
     private List<Integer> factorsOf(int n) {
-        return null;
+        return new ArrayList<Integer>();
     }
 
     private List<Integer> intList(int... args) {
