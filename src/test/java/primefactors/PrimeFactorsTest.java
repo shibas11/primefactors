@@ -14,13 +14,14 @@ public class PrimeFactorsTest {
     public void
     primeFactorsTest() {
         assertThat(factorsOf(1), is(intList()));
+        assertThat(factorsOf(2), is(intList(2)));
     }
 
     private List<Integer> factorsOf(int n) {
         return new ArrayList<Integer>();
     }
 
-    private List<Integer> intList(int... args) {
-        return Arrays.asList();
+    private List<Integer> intList(Integer... args) {
+        return Arrays.asList(args);
     }
 }
