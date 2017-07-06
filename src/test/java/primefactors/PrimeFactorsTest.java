@@ -16,11 +16,12 @@ public class PrimeFactorsTest {
         assertThat(factorsOf(1), is(intList()));
         assertThat(factorsOf(2), is(intList(2)));
         assertThat(factorsOf(3), is(intList(3)));
+        assertThat(factorsOf(4), is(intList(2, 2)));
     }
 
     private List<Integer> factorsOf(int n) {
         ArrayList<Integer> factors = new ArrayList<Integer>();
-        if(n > 1)
+        if (n > 1)
             factors.add(n);
         return factors;
     }
